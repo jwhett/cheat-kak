@@ -29,7 +29,7 @@ provide-module cheat %{
     add-highlighter shared/cheat regions
 
     add-highlighter shared/cheat/content default-region group
-    add-highlighter shared/cheat/comment region '%' '$' fill keyword
+    add-highlighter shared/cheat/title region '%' '$' fill keyword
     add-highlighter shared/cheat/comment region '#' '$' fill comment
     add-highlighter shared/cheat/meta region ';' '$' fill comment
     add-highlighter shared/cheat/bracket region '<' '>' fill value
