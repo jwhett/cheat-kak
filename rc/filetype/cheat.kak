@@ -29,13 +29,11 @@ provide-module cheat %{
     add-highlighter shared/cheat regions
 
     add-highlighter shared/cheat/content default-region group
-    add-highlighter shared/cheat/title region '%' '$' fill green
+    add-highlighter shared/cheat/title region '%' '$' fill magenta
     add-highlighter shared/cheat/import region '@' '$' fill cyan
     add-highlighter shared/cheat/comment region '#' '$' fill comment
     add-highlighter shared/cheat/meta region ';' '$' fill comment
-    add-highlighter shared/cheat/bracket region '<' '>' fill value
-    # This isn't working for some reason...
-    # add-highlighter shared/cheat/vars regex \$\b(\w*):\b 1:value
-
+    add-highlighter shared/cheat/reference region '<' '>' fill value
+    add-highlighter shared/cheat/content/ regex (?<=\$\s)\w+ 0:value
 }
 
