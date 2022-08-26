@@ -30,11 +30,11 @@ provide-module cheat %{
 
     add-highlighter shared/cheat/content default-region group
     # Tags
-    add-highlighter shared/cheat/title region '%' '$' fill magenta
+    add-highlighter shared/cheat/title region '^%' '$' fill magenta
     # Import tags
-    add-highlighter shared/cheat/import region '@' '$' fill cyan
+    add-highlighter shared/cheat/import region '^@' '$' fill cyan
     # Command descriptions
-    add-highlighter shared/cheat/comment region '#' '$' fill comment
+    add-highlighter shared/cheat/comment region '^#' '$' fill comment
     # Meta-comments, ignored
     add-highlighter shared/cheat/meta region '^;' '$' fill comment
     # Variables
