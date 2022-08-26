@@ -13,3 +13,9 @@ plug "jwhett/cheat-kak"
 ```
 
 and `:plug-install`
+
+### Example
+
+Example highlighting
+
+![example of highlighter](./images/example.png)
